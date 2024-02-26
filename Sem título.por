@@ -1,17 +1,14 @@
 programa {
   funcao inicio() {
-  // Declaração de variaveis.
-  cadeia nome = "LPL"
-  caracter sexo = 'M'
-  inteiro idade = 21
-  real peso = 74.93
-  logico humano = verdadeiro
-  
-  //Exibindo dados.
-   escreva("Nome: ", nome)
-   escreva("\nSexo: ", sexo) 
-   escreva("\nIdade: ", idade)
-   escreva("\nPeso: ", peso)
-   escreva("\nHumano: ", humano)
-   }
+  inteiro idade
+
+  escreva("Digite sua idade: ")
+  leia(idade)
+
+  se (idade >= 18) {
+        escreva("Maior de idade.")
+  }
+
+        escreva("\n=== Fim do programa ===")   
+  }
 }

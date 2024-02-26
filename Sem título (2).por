@@ -1,28 +1,16 @@
 programa {
   funcao inicio() {
-    // Declaração de variaveis.
-    real primeiroNumero, segundoNumero
-    real soma, subtracao, multiplicacao, divisao
+    inteiro valor
 
-    // Solicitando dados para o usuário.
-    escreva("Digite o primeiro número: ")
-    leia(primeiroNumero)
+    escreva("Digite o valor:")
+    leia(valor)
 
-    escreva("Digite o segundo número: ")
-    leia(segundoNumero)
-    // realizar cálculos.
-    soma = primeiroNumero + segundoNumero
-    subtracao = primeiroNumero - segundoNumero
-    multiplicacao = primeiroNumero * segundoNumero
-    divisao = primeiroNumero / segundoNumero
-    // Exibindo resultados para o usuário.
-    //Limpa()
-    escreva("=== Exibindo resultados ===")
-    escreva("\nPrimeiro número: ", primeiroNumero)
-    escreva("\nSegundo número: ", segundoNumero)
-    escreva("\nSoma: ", soma)
-    escreva("\nSubtracao: ", subtracao)
-    escreva("\nMultiplicacao: ", multiplicacao)
-    escreva("\nDivisao: ", divisao)
+      se (valor >= 10) {
+    escreva("MAIOR QUE 10!")
+  } senao {
+    escreva("NÃO É MAIOR QUE 10!")
+  } 
+    escreva("\n=== FIM DO PROGRAMA ===")
+    
   }
 }
